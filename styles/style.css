@@ -48,6 +48,7 @@ header nav{
 }
 header{
   color: white;
+  margin-bottom: 7rem;
 }
 .nav-links{
     display: flex;
@@ -291,20 +292,17 @@ header main{
     border-radius: 10px;
  
   }
-  .blob-btn__blobs {
-    position: relative;
-    display: block;
-    height: 100%;
-    filter: url("#goo");
-  }
+ 
   .blob-btn__blob {
     position: absolute;
     top:0px;
     width: 35%;
     height: 100%;
-    background: linear-gradient(to bottom right,#00dc82,#094744,#16a79e);
+    background: linear-gradient(to bottom right,#094744,#094744,#094744);
     border-radius: 100%;
     transform: translate3d(0, 150%, 0) scale(1.7);
+    border: 0;
+    outline: 0;
     transition: transform 0.45s;
   }
   @supports (filter: url("#goo")) {
@@ -524,7 +522,9 @@ header main{
     color: white;
     font-weight: 700;
   }
- 
+ .body-white .nuxt-options-main-text {
+  color: black !important;
+ }
   .nuxt-options-main-text{
     font-size: 1.4rem;
     --tw-text-opacity: 1;
@@ -976,6 +976,9 @@ footer a:hover{
    height: 1px;
 }
 @media (max-width:500px) {
+  header{
+    margin-bottom: 0px !important; 
+  }
   .brand .mt-3{
       display: none !important;
   }.nav-icons{
@@ -1000,7 +1003,7 @@ footer a:hover{
       padding: 0rem 2.7rem;
   }header{
     
-      height:900px !important;
+      height:835px !important;
   }  .nuxt-slider-text-1{
     font-size: 1.7rem !important;
   } .next-options-main-text{
@@ -1145,8 +1148,12 @@ gap: 10px !important;
 .body-white .nuxt-options .nuxt-options-title{
   color: black !important;
 }
+.body-white .nuxt-options .nuxt-option p{
+  color: black !important;
+}
 .body-white .nuxt-options .nuxt-option{
-  background: linear-gradient(to right, #00dc82, #36e4da);
+  background: linear-gradient(to right, #094744, #36e4da); 
+ 
  }
  .body-white .nuxt-slider-text-1{
   color: black;
@@ -1189,10 +1196,11 @@ gap: 10px !important;
     position: absolute;
     z-index: -1;
     left: 6px;
+    transition: 4s all ease-in;
     top: 6px;
     width: calc(100% - 8px);
     height: calc(100% - 9px);
-    background: linear-gradient(to right, #00dc82, #36e4da) !important;
+    background: linear-gradient(to right, #094744, #36e4da); 
     border-radius: 5px;
   }
 

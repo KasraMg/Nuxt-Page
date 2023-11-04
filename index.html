@@ -8,27 +8,20 @@
     <link rel="icon" href="https://img.icons8.com/color/2x/nuxt-jc.png">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  rel="stylesheet" >
   </head>
+  
   <body class="bg-black">
 
     <div class="loader">
-
 
       <div class="infinityChrome">
         <div></div>
         <div></div>
         <div></div>
       </div>
-
 
       <div class="infinity">
         <div>
@@ -42,990 +35,913 @@
         </div>
       </div>
 
-
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:
         none;">
         <defs>
           <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0
+            <fegaussianblur in="SourceGraphic" stdDeviation="6" result="blur" />
+            <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0
                 0 0 1 0 0 0 0 0 18 -7" result="goo" />
-                <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-              </defs>
-            </svg>
+            <feblend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
 
+      <a class="dribbble"
+        href="https://dribbble.com/shots/5557955-Infinity-Loader"
+        target="_blank"><img
+          src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg"
+          alt></a>
 
-            <a class="dribbble"
-              href="https://dribbble.com/shots/5557955-Infinity-Loader"
-              target="_blank"><img
-                src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg"
-                alt=""></a>
+    </div>
+    <header data-aos="fade-up">
+      <img src="./assets/images/hero-gradient.svg"
+        class="w-100 header-bg" alt>
+      <img src="./assets/images/hero-gradient-mobile.svg"
+        class="header-bg-mobile" alt>
+      <nav>
+        <div class="offCanvasDiv">
+          <div>
+            <i class="bi bi-list c-white" data-bs-toggle="offcanvas"
+              href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample"></i>
 
           </div>
-          <header data-aos="fade-up">
-            <img src="https://nuxt.com/assets/home/hero-gradient.svg"
-              class="w-100 header-bg" alt="">
-            <img src="https://nuxt.com/assets/home/hero-gradient-mobile.svg"
-              class="header-bg-mobile" alt="">
-            <nav>
-              <div class="offCanvasDiv">
-                <div>
-                  <i class="bi bi-list c-white" data-bs-toggle="offcanvas"
-                    href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample"></i>
 
+          <div class="offcanvas offcanvas-start " tabindex="-1"
+            id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header c-white">
+              <i class="bi bi-x-lg c-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></i>
+              <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
+                width="38px" height="38px" alt>
+
+              <input type='checkbox' id='timeOffcanvas' />
+              <label for='timeOffcanvas' class="toggle_btn ">Night</label>
+            </div>
+            <div class="offcanvas-body">
+
+              <div class="accordion c-white" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button c-white" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsetwo" aria-expanded="true"
+                      aria-controls="collapsetwo">
+                      <i class="bi bi-journals mx-2"></i>
+                      Docs
+
+                    </button>
+                  </h2>
+                  <div id="collapsetwo" class="accordion-collapse collapse
+                          show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul>
+
+                        <a class="c-white" href="https://nuxt.com/">Get
+                          Started</a>
+                        <a class="c-white" href="https://nuxt.com/">Guide</a>
+                        <a class="c-white" href="https://nuxt.com/">Api</a>
+                        <a class="c-white" href="https://nuxt.com/">Examples</a>
+                        <a class="c-white" href="https://nuxt.com/">Community</a>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
 
+              </div>
+              <ul class="ul-offcanvas-body">
 
-
-                <div class="offcanvas offcanvas-start " tabindex="-1"
-                  id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                  <div class="offcanvas-header c-white">
-                    <i class="bi bi-x-lg c-white" data-bs-dismiss="offcanvas"
-                      aria-label="Close"></i>
-                    <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
-                      width="38px" height="38px" alt="">
-
-
-                    <input type='checkbox' id='timeOffcanvas'/>
-                    <label for='timeOffcanvas' class="toggle_btn ">Night</label>
-                  </div>
-                  <div class="offcanvas-body">
-
-
-                    <div class="accordion c-white" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button c-white" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapsetwo" aria-expanded="true"
-                            aria-controls="collapsetwo">
-                            <i class="bi bi-journals mx-2"></i>
-                            Docs
-
-                          </button>
-                        </h2>
-                        <div id="collapsetwo" class="accordion-collapse collapse
-                          show" aria-labelledby="headingOne"
-                          data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul>
-
-                              <a class="c-white" href="https://nuxt.com/">Get
-                                Started</a>
-                              <a class="c-white" href="https://nuxt.com/">Guide</a>
-                              <a class="c-white" href="https://nuxt.com/">Api</a>
-                              <a class="c-white" href="https://nuxt.com/">Examples</a>
-                              <a class="c-white" href="https://nuxt.com/">Community</a>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                    <ul class="ul-offcanvas-body">
-
-                      <a class="c-white" href="https://nuxt.com/"><i class="bi
+                <a class="c-white" href="https://nuxt.com/"><i class="bi
                           bi-laptop mx-2"></i>Showcase </a>
-                      <a class="c-white" href="https://nuxt.com/"> <i class="bi
+                <a class="c-white" href="https://nuxt.com/"> <i class="bi
                           bi-browser-edge mx-2"></i>Modules
 
-                      </a>
+                </a>
 
-
-                    </ul>
-                    <div class="accordion c-white" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button c-white" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
-                            <i class="bi bi-person-fill mx-2"></i> Support
-                          </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse
+              </ul>
+              <div class="accordion c-white" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button c-white" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      <i class="bi bi-person-fill mx-2"></i> Support
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse
                           show" aria-labelledby="headingOne"
-                          data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul>
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul>
 
-                              <a class="c-white" href="https://nuxt.com/">Solutions</a>
-                              <a class="c-white" href="https://nuxt.com/">Nuxt
-                                Partner Agencies</a>
-                              <a class="c-white" href="https://nuxt.com/">Sponsors</a>
-                              <a class="c-white" href="https://nuxt.com/">Jobs</a>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
+                        <a class="c-white" href="https://nuxt.com/">Solutions</a>
+                        <a class="c-white" href="https://nuxt.com/">Nuxt
+                          Partner Agencies</a>
+                        <a class="c-white" href="https://nuxt.com/">Sponsors</a>
+                        <a class="c-white" href="https://nuxt.com/">Jobs</a>
+                      </ul>
                     </div>
-
                   </div>
                 </div>
+
               </div>
-              <a href="https://nuxt.com/" class="brand c-white">
-                <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
-                  width="38px" height="38px" alt="">
-                <p class="mt-3 mx-2">Nuxt</p>
-              </a>
-              <div class="nav-links " dir="rtl">
-                <a class="c-white" href="https://nuxt.com/support/solutions">Support</a>
-                <a class="c-white" href="https://nuxt.com/showcase">Showcase</a>
-                <a class="c-white" href="https://nuxt.com/modules">Modules</a>
-                <a class="c-white" href="https://nuxt.com/docs">Docs</a>
-              </div>
-              <div class="nav-icons ">
-                <a href="https://github.com/nuxt/nuxt"><i class="bi bi-github"></i></a>
-                <a href="https://discord.com/invite/ps2h6QT"><i class="bi
+
+            </div>
+          </div>
+        </div>
+        <a href="https://nuxt.com/" class="brand c-white">
+          <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
+            width="38px" height="38px" alt>
+          <p class="mt-3 mx-2">Nuxt</p>
+        </a>
+        <div class="nav-links " dir="rtl">
+          <a class="c-white" href="https://nuxt.com/support/solutions">Support</a>
+          <a class="c-white" href="https://nuxt.com/showcase">Showcase</a>
+          <a class="c-white" href="https://nuxt.com/modules">Modules</a>
+          <a class="c-white" href="https://nuxt.com/docs">Docs</a>
+        </div>
+        <div class="nav-icons ">
+          <a href="https://github.com/nuxt/nuxt"><i class="bi bi-github"></i></a>
+          <a href="https://discord.com/invite/ps2h6QT"><i class="bi
                     bi-discord"></i></a>
-                <a href="https://twitter.com/nuxt_js"><i class="bi bi-twitter"></i></a>
+          <a href="https://twitter.com/nuxt_js"><i class="bi bi-twitter"></i></a>
+        </div>
+
+      </nav>
+      <main>
+        <section class="header-section-right ">
+
+          <div class="system">
+            <div class="system__orbit system__orbit--sun">
+              <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
+                alt="Sun" class="system__icon system__icon--sun">
+            </div>
+
+            <div class="system__orbit system__orbit--mercury">
+              <div class="system__planet system__planet--mercury">
+                <img
+                  src="https://www.dropbox.com/s/2o38602cmwhhdi1/mercury.png?raw=1"
+                  alt="Mercury">
               </div>
-
-            </nav>
-            <main>
-              <section class="header-section-right ">
-
-
-                <div class="system">
-                  <div class="system__orbit system__orbit--sun">
-                    <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
-                      alt="Sun" class="system__icon system__icon--sun">
-                  </div>
-
-                  <div class="system__orbit system__orbit--mercury">
-                    <div class="system__planet system__planet--mercury">
-                      <img
-                        src="https://www.dropbox.com/s/2o38602cmwhhdi1/mercury.png?raw=1"
-                        alt="Mercury">
-                    </div>
-                  </div>
-                  <div class="system__orbit system__orbit--venus">
-                    <div class="system__planet system__planet--venus">
-                      <img
-                        src="https://www.dropbox.com/s/wvictuysutiirho/venus.png?raw=1"
-                        alt="Venus">
-                    </div>
-                  </div>
-                  <div class="system__orbit system__orbit--earth">
-                    <div class="system__planet system__planet--earth">
-                      <img
-                        src="https://www.dropbox.com/s/ropzlyhb1v19l5t/earth.png?raw=1"
-                        alt="Earth">
-                    </div>
-                  </div>
-                  <div class="system__orbit system__orbit--mars">
-                    <div class="system__planet system__planet--mars">
-                      <img
-                        src="https://www.dropbox.com/s/fa9biyj617n1q30/mars.png?raw=1"
-                        alt="Mars">
-                    </div>
-                  </div>
-                  <div class="system__orbit system__orbit--jupiter">
-                    <div class="system__planet system__planet--jupiter">
-                      <img
-                        src="https://www.dropbox.com/s/d28oxi2c74zcoqk/jupiter.png?raw=1"
-                        alt="Jupiter">
-                    </div>
-                  </div>
-                  <div class="system__orbit system__orbit--saturn">
-                    <div class="system__planet system__planet--saturn">
-                      <img
-                        src="https://www.dropbox.com/s/h8pj72v6mmaa0yq/saturn.png?raw=1"
-                        alt="Saturn">
-                    </div>
-                  </div>
-                  <div class="system__orbit system__orbit--uranus">
-                    <div class="system__planet system__planet--uranus">
-                      <img
-                        src="https://www.dropbox.com/s/du6znsmfos2r4ry/uranus.png?raw=1"
-                        alt="Uranus">
-                    </div>
-                  </div>
-                  <div class="system__orbit system__orbit--neptune">
-                    <div style="top:53% !important" class="system__planet
+            </div>
+            <div class="system__orbit system__orbit--venus">
+              <div class="system__planet system__planet--venus">
+                <img
+                  src="https://www.dropbox.com/s/wvictuysutiirho/venus.png?raw=1"
+                  alt="Venus">
+              </div>
+            </div>
+            <div class="system__orbit system__orbit--earth">
+              <div class="system__planet system__planet--earth">
+                <img
+                  src="https://www.dropbox.com/s/ropzlyhb1v19l5t/earth.png?raw=1"
+                  alt="Earth">
+              </div>
+            </div>
+            <div class="system__orbit system__orbit--mars">
+              <div class="system__planet system__planet--mars">
+                <img
+                  src="https://www.dropbox.com/s/fa9biyj617n1q30/mars.png?raw=1"
+                  alt="Mars">
+              </div>
+            </div>
+            <div class="system__orbit system__orbit--jupiter">
+              <div class="system__planet system__planet--jupiter">
+                <img
+                  src="https://www.dropbox.com/s/d28oxi2c74zcoqk/jupiter.png?raw=1"
+                  alt="Jupiter">
+              </div>
+            </div>
+            <div class="system__orbit system__orbit--saturn">
+              <div class="system__planet system__planet--saturn">
+                <img
+                  src="https://www.dropbox.com/s/h8pj72v6mmaa0yq/saturn.png?raw=1"
+                  alt="Saturn">
+              </div>
+            </div>
+            <div class="system__orbit system__orbit--uranus">
+              <div class="system__planet system__planet--uranus">
+                <img
+                  src="https://www.dropbox.com/s/du6znsmfos2r4ry/uranus.png?raw=1"
+                  alt="Uranus">
+              </div>
+            </div>
+            <div class="system__orbit system__orbit--neptune">
+              <div style="top:53% !important" class="system__planet
                       system__planet--neptune">
-                      <img
-                        src="https://www.dropbox.com/s/170sr7xl6gxpona/neptune.png?raw=1"
-                        alt="Neptune">
-                    </div>
-                  </div>
-                  <div class="system__orbit system__orbit--pluto">
-                    <div class="system__planet system__planet--pluto">
-                      <img
-                        src="https://www.dropbox.com/s/z7axkafhs887t9b/pluto.png?raw=1"
-                        alt="Pluto">
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section class="header-section-left w-100 ">
-                <button class="blob-btn fs-7 mt-5">
-                  Nuxt: A vision for 2023
-                  <span class="blob-btn__inner">
-                    <span class="blob-btn__blobs">
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
-                    </span>
-                  </span>
-                </button>
-                <p class="header-tilte mt-4">The Intuitive Web <br> Framework</p>
-                <p class="header-main-text">Build your next Vue.js application
-                  with confidence using Nuxt. An open source framework under MIT
-                  license that makes web development simple and powerful.</p>
-                <div class="header-btns">
-                  <button class="mt-4 Started-btn">Get Started</button>
-                  <button class="guithub-btn mt-4">
-                    Open on GitHub
-                    <i class="bi bi-chevron-right mx-3"></i></button>
-                </div>
-              </section>
-            </main>
-
-
-          </header>
-
-          <div class="nuxt-options "data-aos="fade-up">
-            <p class="nuxt-options-title">Deliver an optimized <span>User
-                Experience</span></p>
-            <p class="nuxt-options-main-text">How a user interacts with and
-              experiences your website will determine your impact. Utility, <br>
-              ease of use, and efficiency are key. Nuxt is built with a set of
-              features that make this possible.</p>
-            <div class="main-nuxt-options mt-5">
-              <div class="nuxt-option">
-                <div>
-                  <img src="https://nuxt.com/assets/home/ux-fast-dark.svg"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">Fast and Furious</p>
-                <p style="color:gray">Optimized with code-splitting,
-                  tree-shaking, optimized cold-start, link prefetching, payload
-                  extraction, just to name a few. Fast by default so you can
-                  focus on building.</p>
+                <img
+                  src="https://www.dropbox.com/s/170sr7xl6gxpona/neptune.png?raw=1"
+                  alt="Neptune">
               </div>
-              <div class="nuxt-option ">
-                <div>
-                  <img src="https://nuxt.com/assets/home/ux-hybrid-dark.svg"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">On-demand Rendering</p>
-                <p style="color:gray">Decide what rendering strategy at the
-                  route level: SSR, SSG, CSR, ISR, ESR, SWR. Build any kind of
-                  website or web application with optimized performance in mind.</p>
+            </div>
+            <div class="system__orbit system__orbit--pluto">
+              <div class="system__planet system__planet--pluto">
+                <img
+                  src="https://www.dropbox.com/s/z7axkafhs887t9b/pluto.png?raw=1"
+                  alt="Pluto">
               </div>
-              <div class="nuxt-option ">
-                <div>
-                  <img src="https://nuxt.com/assets/home/ux-seo-dark.svg"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">SEO & Web Vitals</p>
-                <p style="color:#808080">By leveraging server-side rendering,
-                  ESM format and optimized images, Nuxt websites are indexable
-                  by search engines while giving the feeling of an app to the
-                  end-users.</p>
-              </div>
-
             </div>
           </div>
-          <div class="nuxt-slider" data-aos="fade-up">
-            <div class="nuxt-slider-text">
-              <p class="nuxt-slider-text-1">Trusted by world-class companies</p>
-              <p class="nuxt-slider-text-2" style="color: gray;">Explore our
-                selection of websites & applications made with Nuxt. F-500
-                companies,<br> creative agencies and freelancers all trust us.</p>
-              <p class="nuxt-slider-text-3">Discover our showcase <i
-                  style="font-size: 1rem;" class="bi bi-chevron-right mx-3"></i>
-              </p>
-            </div>
-            <div class="swiper mySwiper mt-5 ">
-              <div class="swiper-wrapper">
+        </section>
+        <section class="header-section-left w-100 ">
+          <button class="blob-btn fs-7 mt-5">
+            Nuxt: A vision for 2023
+            <span class="blob-btn__inner">
+              <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+              </span>
+            </span>
+          </button>
+          <p class="header-tilte mt-4">The Intuitive Web <br> Framework</p>
+          <p class="header-main-text">Build your next Vue.js application
+            with confidence using Nuxt. An open source framework under MIT
+            license that makes web development simple and powerful.</p>
+          <div class="header-btns">
+            <button class="mt-4 Started-btn">Get Started</button>
+            <button class="guithub-btn mt-4">
+              Open on GitHub
+              <i class="bi bi-chevron-right mx-3"></i></button>
+          </div>
+        </section>
+      </main>
 
+    </header>
 
-                <div class="swiper-slide">
-                  <img
-                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/a5d4be7e33f3dac04b225c201587bae9.jpg"
-                    alt="">
+    <div class="nuxt-options " data-aos="fade-up">
+      <p class="nuxt-options-title">Deliver an optimized <span>User
+          Experience</span></p>
+      <p class="nuxt-options-main-text">How a user interacts with and
+        experiences your website will determine your impact. Utility, <br>
+        ease of use, and efficiency are key. Nuxt is built with a set of
+        features that make this possible.</p>
+      <div class="main-nuxt-options mt-5">
+        <div class="nuxt-option">
+          <div>
+            <img src="./assets/images/ux-fast.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">Fast and Furious</p>
+          <p style="color:gray">Optimized with code-splitting,
+            tree-shaking, optimized cold-start, link prefetching, payload
+            extraction, just to name a few. Fast by default so you can
+            focus on building.</p>
+        </div>
+        <div class="nuxt-option ">
+          <div>
+            <img src="./assets/images/ux-hybrid.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">On-demand Rendering</p>
+          <p style="color:gray">Decide what rendering strategy at the
+            route level: SSR, SSG, CSR, ISR, ESR, SWR. Build any kind of
+            website or web application with optimized performance in mind.</p>
+        </div>
+        <div class="nuxt-option ">
+          <div>
+            <img src="./assets/images/ux-seo.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">SEO & Web Vitals</p>
+          <p style="color:#808080">By leveraging server-side rendering,
+            ESM format and optimized images, Nuxt websites are indexable
+            by search engines while giving the feeling of an app to the
+            end-users.</p>
+        </div>
 
-                  <p class="mb-1 mt-3">Ecosia - the search engine that plants...</p>
-                  <a href="ecosia.org" style="color: #00dc82;">ecosia.org</a>
-                </div>
+      </div>
+    </div>
+    <div class="nuxt-slider" data-aos="fade-up">
+      <div class="nuxt-slider-text">
+        <p class="nuxt-slider-text-1">Trusted by world-class companies</p>
+        <p class="nuxt-slider-text-2" style="color: gray;">Explore our
+          selection of websites & applications made with Nuxt. F-500
+          companies,<br> creative agencies and freelancers all trust us.</p>
+        <p class="nuxt-slider-text-3">Discover our showcase <i
+            style="font-size: 1rem;" class="bi bi-chevron-right mx-3"></i>
+        </p>
+      </div>
+      <div class="swiper mySwiper mt-5 ">
+        <div class="swiper-wrapper">
 
+          <div class="swiper-slide">
+            <img
+              src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/a5d4be7e33f3dac04b225c201587bae9.jpg"
+              alt>
 
-                <div class="swiper-slide">
-                  <img
-                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/6895f4e58ae239aab6b8f472ad004125.jpg"
-                    alt="">
-
-                  <p class="mb-1 mt-3">Supercharged GitHub Experien</p>
-                  <a href="volta.net" style="color: #00dc82;">volta.net</a>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/5913ce3a99defcd8778162850ee80657.jpg"
-                    alt="">
-
-                  <p class="mb-1 mt-3">Upwork | The World’s Work Marketplace</p>
-                  <a href="upwork.com" style="color: #00dc82;">upwork.com</a>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/ea06d80132aa1b1e4fd4c1328df59d0e.jpg"
-                    alt="">
-
-                  <p class="mb-1 mt-3">My Typographic Superpower | Adobe Fonts |
-                    Tags Game</p>
-                  <a href="game.fonts.adobe.com" style="color: #00dc82;">game.fonts.adobe.com</a>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/768fc07a0e823ef033078fa7ccb5f6bc.jpg"
-                    alt="">
-
-                  <p class="mb-1 mt-3">NBA Rakuten公式 - NBAの試合をLIVEや動画で楽</p>
-                  <a href="nba.rakuten.co.jp" style="color: #00dc82;">nba.rakuten.co.jp</a>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/90ddab9e41f138afa8ac5cf6e18ccb18.jpg"
-                    alt="">
-
-                  <p class="mb-1 mt-3">TikTok For Business: marketing en TikTok</p>
-                  <a href="tiktok.com" style="color: #00dc82;">tiktok.com</a>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/abf668c42dd1858f8a3580657baef798.jpg"
-                    alt="">
-
-                  <p class="mb-1 mt-3">Discover the best websites of 2020!</p>
-                  <a href="annual.awwwards.com" style="color: #00dc82;">annual.awwwards.com</a>
-                </div>
-
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/b599af41ce9fab9a3b5d7f19281ccdb8.jpg"
-                    alt="">
-
-                  <p class="mb-1 mt-3">NASA Jet Propulsion Laboratory (JPL) -
-                    Robotic </p>
-                  <a href="jpl.nasa.gov" style="color: #00dc82;">jpl.nasa.gov</a>
-                </div>
-
-
-
-              </div>
-
-            </div>
+            <p class="mb-1 mt-3">Ecosia - the search engine that plants...</p>
+            <a href="ecosia.org" style="color: #00dc82;">ecosia.org</a>
           </div>
 
+          <div class="swiper-slide">
+            <img
+              src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/6895f4e58ae239aab6b8f472ad004125.jpg"
+              alt>
 
+            <p class="mb-1 mt-3">Supercharged GitHub Experien</p>
+            <a href="volta.net" style="color: #00dc82;">volta.net</a>
+          </div>
 
+          <div class="swiper-slide">
+            <img
+              src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/5913ce3a99defcd8778162850ee80657.jpg"
+              alt>
 
-          <div class="nuxt-options " style="margin-top: 8rem;"
-            data-aos="fade-up">
-            <p class="nuxt-options-title">Discover a new <span>Developer
-                Experience</span></p>
-            <p class="nuxt-options-main-text">Developers deserve solutions as
-              well designed as non-technical people. Our focus <br> is to
-              empower Vue developers to ship great softwares with confidence.</p>
-            <div class="main-nuxt-options mt-5">
-              <div class="nuxt-option">
-                <div>
-                  <img
-                    src="https://nuxt.com/assets/home/dx-plug-and-play-dark.svg"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">Plug & Play</p>
-                <p style="color:gray">Unlock features by creating folders and
-                  files with the most intuitive directory structure made for
-                  developers and teams.</p>
-              </div>
-              <div class="nuxt-option ">
-                <div>
-                  <img src="https://nuxt.com/assets/home/dx-effortless-dark.svg"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">Automation</p>
-                <p style="color:gray">Repetitive tasks are automated:
-                  auto-imports, code-splitting, typings, minification, bundling
-                  for production. and more.</p>
-              </div>
-              <div class="nuxt-option ">
-                <div>
-                  <img src="https://nuxt.com/assets/home/dx-batteries-dark.svg"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">Batteries Included</p>
-                <p style="color:#808080">Data fetching, state management, meta
-                  tags helpers, route guards, cookies, error handling, bundle
-                  analyzer and more.</p>
-              </div>
+            <p class="mb-1 mt-3">Upwork | The World’s Work Marketplace</p>
+            <a href="upwork.com" style="color: #00dc82;">upwork.com</a>
+          </div>
 
+          <div class="swiper-slide">
+            <img
+              src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/ea06d80132aa1b1e4fd4c1328df59d0e.jpg"
+              alt>
+
+            <p class="mb-1 mt-3">My Typographic Superpower | Adobe Fonts |
+              Tags Game</p>
+            <a href="game.fonts.adobe.com" style="color: #00dc82;">game.fonts.adobe.com</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/768fc07a0e823ef033078fa7ccb5f6bc.jpg"
+              alt>
+
+            <p class="mb-1 mt-3">NBA Rakuten公式 - NBAの試合をLIVEや動画で楽</p>
+            <a href="nba.rakuten.co.jp" style="color: #00dc82;">nba.rakuten.co.jp</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/90ddab9e41f138afa8ac5cf6e18ccb18.jpg"
+              alt>
+
+            <p class="mb-1 mt-3">TikTok For Business: marketing en TikTok</p>
+            <a href="tiktok.com" style="color: #00dc82;">tiktok.com</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/abf668c42dd1858f8a3580657baef798.jpg"
+              alt>
+
+            <p class="mb-1 mt-3">Discover the best websites of 2020!</p>
+            <a href="annual.awwwards.com" style="color: #00dc82;">annual.awwwards.com</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/b599af41ce9fab9a3b5d7f19281ccdb8.jpg"
+              alt>
+
+            <p class="mb-1 mt-3">NASA Jet Propulsion Laboratory (JPL) -
+              Robotic </p>
+            <a href="jpl.nasa.gov" style="color: #00dc82;">jpl.nasa.gov</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="nuxt-options " style="margin-top: 8rem;"
+      data-aos="fade-up">
+      <p class="nuxt-options-title">Discover a new <span>Developer
+          Experience</span></p>
+      <p class="nuxt-options-main-text">Developers deserve solutions as
+        well designed as non-technical people. Our focus <br> is to
+        empower Vue developers to ship great softwares with confidence.</p>
+      <div class="main-nuxt-options mt-5">
+        <div class="nuxt-option">
+          <div>
+            <img
+              src="./assets/images/dx-plug-and-play.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">Plug & Play</p>
+          <p style="color:gray">Unlock features by creating folders and
+            files with the most intuitive directory structure made for
+            developers and teams.</p>
+        </div>
+        <div class="nuxt-option ">
+          <div>
+            <img src="./assets/images/dx-effortless.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">Automation</p>
+          <p style="color:gray">Repetitive tasks are automated:
+            auto-imports, code-splitting, typings, minification, bundling
+            for production. and more.</p>
+        </div>
+        <div class="nuxt-option ">
+          <div>
+            <img src="./assets/images/dx-batteries.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">Batteries Included</p>
+          <p style="color:#808080">Data fetching, state management, meta
+            tags helpers, route guards, cookies, error handling, bundle
+            analyzer and more.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="try-btn" data-aos="fade-up">
+      <button>Try it now</button>
+    </div>
+
+    <div class="comment-about-nuxt" data-aos="fade-up">
+      <p class="comments-title">Trusted by the world wide web</p>
+      <p class="nuxt-section-text">Their opinions are valuable and worth
+        sharing to everyone</p>
+      <main class="mt-5">
+        <section>
+          <p>Nuxt offers a compelling solution and a great ecosystem to
+            help you ship fullstack Vue apps that are performant and SEO
+            friendly. The flexibility to choose between SSR and SSG is
+            icing on the cake.</p>
+          <div class="person-details mt-lg-5">
+            <div class="person-name">
+              <p style="font-weight:700" class="mb-1">Evan You</p>
+              <p style="color: gray;">Creator of Vue.js and Vite</p>
             </div>
+            <img src="./assets/images/evan.png" alt>
           </div>
-
-          <div class="try-btn" data-aos="fade-up">
-            <button>Try it now</button>
-          </div>
-
-
-          <div class="comment-about-nuxt" data-aos="fade-up">
-            <p class="comments-title">Trusted by the world wide web</p>
-            <p class="nuxt-section-text">Their opinions are valuable and worth
-              sharing to everyone</p>
-            <main class="mt-5">
-              <section>
-                <p>Nuxt offers a compelling solution and a great ecosystem to
-                  help you ship fullstack Vue apps that are performant and SEO
-                  friendly. The flexibility to choose between SSR and SSG is
-                  icing on the cake.</p>
-                <div class="person-details mt-lg-5">
-                  <div class="person-name">
-                    <p style="font-weight:700" class="mb-1">Evan You</p>
-                    <p style="color: gray;">Creator of Vue.js and Vite</p>
-                  </div>
-                  <img src="https://nuxt.com/assets/home/evan.png" alt="">
-                </div>
-              </section>
-              <section>
-                <p>Nuxt has outstanding developer productivity, experience, and
-                  performance right out of the gate! There’s so much attention
-                  to detail, ensuring teams have everything at their fingertips
-                  to productively build all manners of applications.</p>
-                <div class="person-details mt-lg-5">
-                  <div class="person-name">
-                    <p style="font-weight:700" class="mb-1">Sarah Drasner</p>
-                    <p style="color: gray;">Director of Engineering and Web
-                      Infrastructure, Google</p>
-                  </div>
-                  <img src="https://nuxt.com/assets/home/sarah.png" alt="">
-                </div>
-              </section>
-              <section>
-                <p>Nuxt is a fantastic choice for teams building a
-                  production-grade product on the web. It aims to bake in
-                  performance best-practices while maintaining excellent Vue.js
-                  DX.</p>
-                <div class="person-details mt-lg-5">
-                  <div class="person-name">
-                    <p style="font-weight:700" class="mb-1">Addy Osmani</p>
-                    <p style="color: gray;">Chief Engineer of Chrome</p>
-                  </div>
-                  <img src="https://nuxt.com/assets/home/addy.png" alt="">
-                </div>
-              </section>
-
-            </main>
-          </div>
-
-          <div class="nuxt-plugins" data-aos="fade-up">
-            <p class="nuxt-section-title">Ship faster with <span>Nuxt modules</span></p>
-            <p class="nuxt-section-text">Nuxt is made with a robust plugin
-              system. Integrate with popular CMS or UI libraries <br> with one
-              line of code. With more than 15M monthly downloads and 1K
-              contributors, <br> Nuxt modules are your day to day companions.
-              tailwindcss
-            </p>
-
-
-            <div class="swiper mySwiper2 " style="margin-top: 6rem;"
-              data-aos="fade-up">
-              <div class="swiper-wrapper">
-
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/tailwindcss.png"
-                    alt="">
-                </div>
-
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/i18n.png"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/content.png"
-                    alt="">
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/pinia.svg"
-                    alt="">
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/image.png"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/vueuse.svg"
-                    alt="">
-
-                </div>
-
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/tailwindcss.png"
-                    alt="">
-                </div>
-
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/i18n.png"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/content.png"
-                    alt="">
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/pinia.svg"
-                    alt="">
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/image.png"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/vueuse.svg"
-                    alt="">
-
-                </div>
-
-
-
-              </div>
-
-
-
-
+        </section>
+        <section>
+          <p>Nuxt has outstanding developer productivity, experience, and
+            performance right out of the gate! There’s so much attention
+            to detail, ensuring teams have everything at their fingertips
+            to productively build all manners of applications.</p>
+          <div class="person-details mt-lg-5">
+            <div class="person-name">
+              <p style="font-weight:700" class="mb-1">Sarah Drasner</p>
+              <p style="color: gray;">Director of Engineering and Web
+                Infrastructure, Google</p>
             </div>
+            <img src="./assets/images/sarah.png" alt>
+          </div>
+        </section>
+        <section>
+          <p>Nuxt is a fantastic choice for teams building a
+            production-grade product on the web. It aims to bake in
+            performance best-practices while maintaining excellent Vue.js
+            DX.</p>
+          <div class="person-details mt-lg-5">
+            <div class="person-name">
+              <p style="font-weight:700" class="mb-1">Addy Osmani</p>
+              <p style="color: gray;">Chief Engineer of Chrome</p>
+            </div>
+            <img src="./assets/images/addy.png" alt>
+          </div>
+        </section>
 
-            <div class="swiper mySwiper3 mt-5 swiper-initialized
+      </main>
+    </div>
+
+    <div class="nuxt-plugins" data-aos="fade-up">
+      <p class="nuxt-section-title">Ship faster with <span>Nuxt modules</span></p>
+      <p class="nuxt-section-text">Nuxt is made with a robust plugin
+        system. Integrate with popular CMS or UI libraries <br> with one
+        line of code. With more than 15M monthly downloads and 1K
+        contributors, <br> Nuxt modules are your day to day companions.
+        tailwindcss
+      </p>
+
+      <div class="swiper mySwiper2 " style="margin-top: 6rem;"
+        data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/tailwindcss.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/i18n.png"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/content.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/pinia.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/image.png"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/vueuse.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/tailwindcss.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/i18n.png"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/content.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/pinia.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/image.png"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/vueuse.svg"
+              alt>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper mySwiper3 mt-5 swiper-initialized
               swiper-horizontal swiper-rtl swiper-backface-hidden
-              "data-aos="fade-up" dir="rtl">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/prismic.png"
-                    alt="">
-                </div>
-
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/windicss.svg"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/strapi.png"
-                    alt="">
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/formkit.png"
-                    alt="">
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/storyblok.png"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/sanity.png"
-                    alt="">
-
-                </div>
-
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/tailwindcss.png"
-                    alt="">
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/prismic.png"
-                    alt="">
-                </div>
-
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/windicss.svg"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/strapi.png"
-                    alt="">
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/formkit.png"
-                    alt="">
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/storyblok.png"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/sanity.png"
-                    alt="">
-
-                </div>
-
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/tailwindcss.png"
-                    alt="">
-                </div>
-
-
-
-
-
-              </div>
-
-
-
-
-
-            </div>
-
-            <div class="swiper mySwiper4 mt-5 "data-aos="fade-up">
-              <div class="swiper-wrapper">
-
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/supabase.png"
-                    alt="">
-                </div>
-
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/algolia.svg"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/directus.svg"
-                    alt="">
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/unlighthouse.svg"
-                    alt="">
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/meilisearch.svg"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/harlem.svg"
-                    alt="">
-
-                </div>
-
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/supabase.png"
-                    alt="">
-                </div>
-
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/algolia.svg"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/directus.svg"
-                    alt="">
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/unlighthouse.svg"
-                    alt="">
-
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/meilisearch.svg"
-                    alt="">
-
-
-                </div>
-
-                <div class="swiper-slide">
-
-                  <img
-                    src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/harlem.svg"
-                    alt="">
-
-                </div>
-
-              </div>
-
-
-
-
-
-            </div>
+              " data-aos="fade-up" dir="rtl">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/prismic.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/windicss.svg"
+              alt>
 
           </div>
 
-
-          <div class="try-btn" data-aos="fade-up">
-            <button>Explore Nuxt modules</button>
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/strapi.png"
+              alt>
           </div>
 
+          <div class="swiper-slide">
 
-
-
-
-
-
-          <div class="nuxt-detail" data-aos="fade-up">
-            <p class="nuxt-section-title">A community of<span> Web builders</span></p>
-            <p class="nuxt-section-text">Nuxt is composed of web builders all
-              over the world who like to craft beautiful user experiences with
-              Vue.js.</p>
-            <main>
-              <section>
-                <iconify-icon class='nuxt-detail-icon' width="30" height="30"
-                  icon="mdi:npm"></iconify-icon>
-                <p class="nuxt-section-title">60m</p>
-                <p class="nuxt-section-text">npm downloads </p>
-              </section>
-              <section>
-                <iconify-icon class='nuxt-detail-icon' width="30" height="30"
-                  icon="ic:baseline-discord"></iconify-icon>
-                <p class="nuxt-section-title">20k</p>
-                <p class="nuxt-section-text">Discord members </p>
-              </section>
-              <section>
-                <iconify-icon class='nuxt-detail-icon' width="30" height="30"
-                  icon="mdi:github"></iconify-icon>
-                <p class="nuxt-section-title">60k</p>
-                <p class="nuxt-section-text">GitHub stars</p>
-              </section>
-              <section>
-                <iconify-icon class='nuxt-detail-icon' width="30" height="30"
-                  icon="mdi:twitter"></iconify-icon>
-                <p class="nuxt-section-title">78k</p>
-                <p class="nuxt-section-text">Twitter followers</p>
-              </section>
-            </main>
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/formkit.png"
+              alt>
 
           </div>
 
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/storyblok.png"
+              alt>
 
-
-
-
-          <div class="nuxt-options nuxt-option-2" data-aos="fade-up"
-            style="margin-top: 8rem;">
-            <p class="nuxt-options-title">A solution to cover <span>all your
-                needs</span></p>
-            <p class="nuxt-options-main-text">Developers deserve solutions as
-              well designed as non-technical people. Our focus <br> is to
-              empower Vue developers to ship great softwares with confidence.</p>
-            <div class="main-nuxt-options mt-5">
-              <div class="nuxt-option">
-                <div>
-                  <img
-                    src="https://nuxt.com/assets/home/needs-official-agency-dark.png"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">Official agency partners</p>
-                <p style="color:gray">A carefully built network of trusted
-                  agencies from all over the world!</p>
-              </div>
-              <div class="nuxt-option ">
-                <div>
-                  <img
-                    src="https://nuxt.com/assets/home/needs-nuxt-expert-dark.png"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">Nuxt experts network</p>
-                <p style="color:gray">A network of freelance from all over the
-                  world, certified by the NuxtLabs team !</p>
-              </div>
-              <div class="nuxt-option ">
-                <div>
-                  <img
-                    src="https://nuxt.com/assets/home/needs-community-support-dark.png"
-                    class="w-100" alt="">
-                </div>
-                <p class="c-white mt-3">Community support</p>
-                <p style="color:#808080">More than 2000 active contributors on
-                  multiple platforms are here to help !</p>
-              </div>
-
-            </div>
           </div>
 
+          <div class="swiper-slide">
 
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/sanity.png"
+              alt>
 
+          </div>
 
-          <div class="nuxt-last-section" data-aos="fade-up" style="margin-top:
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/tailwindcss.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/prismic.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/windicss.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/strapi.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/formkit.png"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/storyblok.png"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/sanity.png"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/tailwindcss.png"
+              alt>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper mySwiper4 mt-5 " data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/supabase.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/algolia.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/directus.svg"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/unlighthouse.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/meilisearch.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/harlem.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/supabase.png"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/algolia.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/directus.svg"
+              alt>
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/unlighthouse.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/meilisearch.svg"
+              alt>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <img
+              src="https://api.nuxtjs.org/api/ipx/s_80,f_webp/gh/nuxt/modules/main/icons/harlem.svg"
+              alt>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="try-btn" data-aos="fade-up">
+      <button>Explore Nuxt modules</button>
+    </div>
+
+    <div class="nuxt-detail" data-aos="fade-up">
+      <p class="nuxt-section-title">A community of<span> Web builders</span></p>
+      <p class="nuxt-section-text">Nuxt is composed of web builders all
+        over the world who like to craft beautiful user experiences with
+        Vue.js.</p>
+      <main>
+        <section>
+          <iconify-icon class='nuxt-detail-icon' width="30" height="30"
+            icon="mdi:npm"></iconify-icon>
+          <p class="nuxt-section-title">60m</p>
+          <p class="nuxt-section-text">npm downloads </p>
+        </section>
+        <section>
+          <iconify-icon class='nuxt-detail-icon' width="30" height="30"
+            icon="ic:baseline-discord"></iconify-icon>
+          <p class="nuxt-section-title">20k</p>
+          <p class="nuxt-section-text">Discord members </p>
+        </section>
+        <section>
+          <iconify-icon class='nuxt-detail-icon' width="30" height="30"
+            icon="mdi:github"></iconify-icon>
+          <p class="nuxt-section-title">60k</p>
+          <p class="nuxt-section-text">GitHub stars</p>
+        </section>
+        <section>
+          <iconify-icon class='nuxt-detail-icon' width="30" height="30"
+            icon="mdi:twitter"></iconify-icon>
+          <p class="nuxt-section-title">78k</p>
+          <p class="nuxt-section-text">Twitter followers</p>
+        </section>
+      </main>
+
+    </div>
+
+    <div class="nuxt-options nuxt-option-2" data-aos="fade-up"
+      style="margin-top: 8rem;">
+      <p class="nuxt-options-title">A solution to cover <span>all your
+          needs</span></p>
+      <p class="nuxt-options-main-text">Developers deserve solutions as
+        well designed as non-technical people. Our focus <br> is to
+        empower Vue developers to ship great softwares with confidence.</p>
+      <div class="main-nuxt-options mt-5">
+        <div class="nuxt-option">
+          <div>
+            <img
+              src="./assets/images/needs-official-agency.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">Official agency partners</p>
+          <p style="color:gray">A carefully built network of trusted
+            agencies from all over the world!</p>
+        </div>
+        <div class="nuxt-option ">
+          <div>
+            <img
+              src="./assets/images/needs-nuxt-expert.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">Nuxt experts network</p>
+          <p style="color:gray">A network of freelance from all over the
+            world, certified by the NuxtLabs team !</p>
+        </div>
+        <div class="nuxt-option ">
+          <div>
+            <img
+              src="./assets/images/needs-community-support.svg"
+              class="w-100" alt>
+          </div>
+          <p class="c-white mt-3">Community support</p>
+          <p style="color:#808080">More than 2000 active contributors on
+            multiple platforms are here to help !</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="nuxt-last-section" data-aos="fade-up" style="margin-top:
             8rem;">
-            <div>
-              <p>GETTING STARTED</p>
-              <p class="nuxt-last-section-title">Start your Nuxt Journey</p>
-              <p style="color:gray;font-size:1.5rem">Learn everything you need
-                to know, from beginner to master.</p>
-            </div>
-            <div>
-              <button class=" Started-btn mx-3">Get Started</button>
-              <button class="btn-dark">Explore Examples</button>
-            </div>
-          </div>
+      <div>
+        <p>GETTING STARTED</p>
+        <p class="nuxt-last-section-title">Start your Nuxt Journey</p>
+        <p style="color:gray;font-size:1.5rem">Learn everything you need
+          to know, from beginner to master.</p>
+      </div>
+      <div>
+        <button class=" Started-btn mx-3">Get Started</button>
+        <button class="btn-dark">Explore Examples</button>
+      </div>
+    </div>
 
+    <footer>
+      <div class="brand-footer">
+        <div>
+          <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
+            width="28px" height="28px" alt>
+        </div>
 
-
-          <footer>
-            <div class="brand-footer">
-              <div>
-                <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
-                  width="28px" height="28px" alt="">
-              </div>
-
-            </div>
-            <main>
-              <section dir="rtl">
-                <p class="pt-2" style="color: gray;">© 2022 Nuxt - MIT License</p>
-                <input type='checkbox' id='time' />
-                <label  for='time' class="toggle_btn toggle2">Night</label>
-              </section>
-              <section class='links-secton'style="color: gray;">
-                <a href="https://nuxt.com/support/solutions">Support</a>
-                <a href="https://nuxt.com/design-kit"> Design Kit</a>
-                <a href="https://nuxtlabs.com/"> NuxtLabs</a>
-                <a href="https://nuxt.studio/"> Nuxt Studio</a></section>
-              <section class="c-white footer-icon">
-                <a href="https://github.com/nuxt/nuxt"><i class="bi bi-github"></i></a>
-                <a href="https://discord.com/invite/ps2h6QT"><i class="bi
+      </div>
+      <main>
+        <section dir="rtl">
+          <p class="pt-2" style="color: gray;">© 2022 Nuxt - MIT License</p>
+          <input type='checkbox' id='time' />
+          <label for='time' class="toggle_btn toggle2">Night</label>
+        </section>
+        <section class='links-secton' style="color: gray;">
+          <a href="https://nuxt.com/support/solutions">Support</a>
+          <a href="https://nuxt.com/design-kit"> Design Kit</a>
+          <a href="https://nuxtlabs.com/"> NuxtLabs</a>
+          <a href="https://nuxt.studio/"> Nuxt Studio</a></section>
+        <section class="c-white footer-icon">
+          <a href="https://github.com/nuxt/nuxt"><i class="bi bi-github"></i></a>
+          <a href="https://discord.com/invite/ps2h6QT"><i class="bi
                     bi-discord"></i></a>
-                <a href="https://twitter.com/nuxt_js"><i class="bi bi-twitter"></i></a>
-              </section>
-            </main>
+          <a href="https://twitter.com/nuxt_js"><i class="bi bi-twitter"></i></a>
+        </section>
+      </main>
 
-          </footer>
-          <script src="./index.js"></script>
-          <script
-            src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-          <script>
+    </footer>
+    <script src="./index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
       AOS.init();
     </script>
 
-
-          <script>
+    <script>
     var swiper = new Swiper(".mySwiper", {
         rewind: true,
   
@@ -1102,15 +1018,15 @@ var swiper2 = new Swiper(".mySwiper2", {
       });
 
     </script>
-          <script
-            src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
-          <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"></script>
-          <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous"></script>
-        </body>
-      </html>
+    <script
+      src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
