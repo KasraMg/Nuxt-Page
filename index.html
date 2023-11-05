@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  rel="stylesheet" >
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="theme-color" content="#094744" />
     <link rel="manifest" href="./manifest.json" />
   </head>
@@ -58,7 +58,7 @@
 
     </div>
     <header data-aos="fade-up">
-      <img src="./assets/images/hero-gradient.svg"
+      <img  src="./assets/images/hero-gradient.svg"
         class="w-100 header-bg" alt>
       <img src="./assets/images/hero-gradient-mobile.svg"
         class="header-bg-mobile" alt>
@@ -261,7 +261,7 @@
               </span>
             </span>
           </button>
-          <p class="header-tilte mt-4">The Intuitive Web <br> Framework</p>
+          <p class="header-tilte mt-4" id="kir">The Intuitive Web <br> Framework</p>
           <p class="header-main-text">Build your next Vue.js application
             with confidence using Nuxt. An open source framework under MIT
             license that makes web development simple and powerful.</p>
@@ -936,100 +936,12 @@
       </main>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script> 
     <script src="./js/index.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
-    <script>
-    var swiper = new Swiper(".mySwiper", {
-        rewind: true,
-  
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        },
-      });
-
-var swiper2 = new Swiper(".mySwiper2", {
-        rewind: true,
-  
-        breakpoints: {
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1024: {
-            slidesPerView:6,
-            spaceBetween: 30,
-          },
-        },
-      });
-
-           var swiper3 = new Swiper(".mySwiper3", {
-        rewind: true,
-  
-        breakpoints: {
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1024: {
-            slidesPerView:5,
-            spaceBetween: 30,
-          },
-        },
-      });
-      var swiper4 = new Swiper(".mySwiper4", {
-        rewind: true,
-  
-        breakpoints: {
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1024: {
-            slidesPerView:6,
-            spaceBetween: 30,
-          },
-        },
-      });
-
-    </script>
-    <script
-      src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"></script>
   </body>
 </html>

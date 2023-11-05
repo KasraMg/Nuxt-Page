@@ -1,16 +1,12 @@
  
-
-// Service Worker Codes
-const cacheVersion = 2;
+const cacheVersion =3;
 
 const activeCaches = {
   static: `static-v${cacheVersion}`,
   dynamic: `dynamic-v${cacheVersion}`,
 };
 
-self.addEventListener("install", (event) => {
-  console.log("Service Worker Installed Successfully :))");
-
+self.addEventListener("install", (event) => { 
   event.waitUntil(
     caches.open(activeCaches["static"]).then((cache) => {
       cache.addAll([
@@ -23,9 +19,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
-self.addEventListener("activate", (event) => {
-  console.log("Service Worker Activated Successfully :))");
-
+self.addEventListener("activate", (event) => { 
   const activeCacheNames = Object.values(activeCaches);
 
   event.waitUntil(
@@ -41,11 +35,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-self.addEventListener("fetch", (event) => {
-  console.log(event.request);
-
-  // 1. First Cache, second network
-
+self.addEventListener("fetch", (event) => { 
   event.respondWith(
     caches.match(event.request).then((response) => {
       if (response) {

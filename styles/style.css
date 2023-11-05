@@ -1551,3 +1551,12 @@ gap: 10px !important;
     height: 100%;
   }
   
+
+  .iziToast-icon {
+    background: url(/assets/icons/icon-48x48.png); 
+    background-size: 25px 27px; 
+    left: 38px;
+    background-repeat: no-repeat;
+    right: 5px;
+    top: 47% !important;
+  }
