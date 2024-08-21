@@ -32,8 +32,7 @@
     color: black!important;
 }
 .bg-black{
-    --tw-bg-opacity: 1;
-   
+    --tw-bg-opacity: 1; 
     background-color: rgb(12 12 13/var(--tw-bg-opacity));
 }
 .bg-white{
