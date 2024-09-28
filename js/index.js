@@ -3,20 +3,12 @@ let toggle_btn = document.querySelectorAll('.toggle_btn')
 const loader = document.querySelector('.loader')
 
 toggle_btn.forEach(toggle => {
-  toggle.addEventListener('click', (button) => {
-
-    console.log(button);
-    body.classList.toggle('body-white')
-
-
+  toggle.addEventListener('click', () => { 
+    body.classList.toggle('body-white') 
     document.querySelectorAll('a').forEach(item => {
       item.classList.toggle('c-dark')
-    })
-
-  })
-
-
-
+    }) 
+  }) 
 })
 
 
@@ -33,9 +25,7 @@ window.addEventListener('load', () => {
     progressBarColor: 'rgb(0, 255, 184)',
   });
 })
-
-
-
+ 
 // iziToast
 iziToast.settings({
   timeout: 10000,
@@ -59,9 +49,7 @@ else {
   console.log("Not Support");
 }
 //service Worker
-
-
-
+ 
 
 // sliders
 

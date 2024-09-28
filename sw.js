@@ -1,4 +1,4 @@
- 
+
 const cacheVersion = 2;
 
 const activeCaches = {
@@ -6,23 +6,23 @@ const activeCaches = {
   dynamic: `dynamic-v${cacheVersion}`,
 };
 
-self.addEventListener("install", (event) => { 
+self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(activeCaches["static"]).then((cache) => {
       cache.addAll([
         "/",
-        "/fallback.html", 
-        "js/index.js", 
+        "/fallback.html",
+        "js/index.js",
         "styles/style.css",
+        "styles/responsive.css",
         "assets/images"
       ]);
     })
   );
 });
 
-self.addEventListener("activate", (event) => { 
-  const activeCacheNames = Object.values(activeCaches);
-
+self.addEventListener("activate", (event) => {
+  const activeCacheNames = Object.values(activeCaches); 
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
@@ -36,7 +36,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-self.addEventListener("fetch", (event) => { 
+self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
       if (response) {
@@ -54,7 +54,5 @@ self.addEventListener("fetch", (event) => {
           });
       }
     })
-  );
-
-  
+  );  
 });
